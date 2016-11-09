@@ -23,6 +23,7 @@ Private pCA As String
 Private pActive As Integer
 Private pMail As String
 Private pSubRole As String
+
 Public Property Get SubRole() As String
     SubRole = pSubRole
 End Property

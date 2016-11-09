@@ -1,10 +1,11 @@
 Attribute VB_Name = "Lib"
+
 Function selectFile() As String
     nameOfFile = ""
     With Application.FileDialog(msoFileDialogFilePicker)
         .AllowMultiSelect = False
         .InitialFileName = "*.*"
-        .Title = "Âûבונטעו פאיכ"
+        .Title = "Select a file"
         .Show
         If .SelectedItems.Count = 1 Then nameOfFile = .SelectedItems(1)
     End With
